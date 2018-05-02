@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Lista quizzes </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Lista quizzes</h1>
+    <ul>
+        <% quizzesList.forEach(quiz => { %>
+            <li><%= quiz.question %> => <%= quiz.answer %> </li>
+        <% }); %>  
+    </ul>
+  </body>
+</html>
